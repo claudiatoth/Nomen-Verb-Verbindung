@@ -205,9 +205,9 @@ function buildFinalTest() {
             
             <!-- Butoane verificare + navigare -->
             <div class="test-controls">
-                <button class="btn btn-secondary" onclick="prevQuestion()" id="prev-btn">← Înapoi</button>
-                <button class="btn btn-check" onclick="checkCurrentQuestion()" id="check-btn">✓ Verifică</button>
-                <button class="btn btn-check" onclick="nextQuestion()" id="next-btn">Următor →</button>
+                <button class="btn btn-secondary" onclick="prevQuestion()" id="test-prev-btn">← Înapoi</button>
+                <button class="btn btn-check" onclick="checkCurrentQuestion()" id="test-check-btn">✓ Verifică</button>
+                <button class="btn btn-check" onclick="nextQuestion()" id="test-next-btn">Următor →</button>
             </div>
         </div>
         
@@ -238,9 +238,9 @@ function showQuestion(index) {
     const q = finalTestData[index];
     const container = document.getElementById('question-container');
     const feedback = document.getElementById('test-feedback');
-    const checkBtn = document.getElementById('check-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
+    const checkBtn = document.getElementById('test-check-btn');
+    const nextBtn = document.getElementById('test-next-btn');
+    const prevBtn = document.getElementById('test-prev-btn');
     
     // Update progress
     document.getElementById('progress-text').textContent = `Întrebarea ${index + 1} / ${finalTestData.length}`;
@@ -324,11 +324,26 @@ function showQuestion(index) {
         if (userAnswers[index].checked) {
             displayFeedback(index);
             checkBtn.disabled = true;
+            setAnswerDisabled(q.type, true);
         } else {
             checkBtn.disabled = false;
+            setAnswerDisabled(q.type, false);
         }
     } else {
         checkBtn.disabled = false;
+        setAnswerDisabled(q.type, false);
+    }
+}
+
+// ============================================
+// DEZACTIVEAZĂ / ACTIVEAZĂ INPUT-UL RĂSPUNSULUI
+// ============================================
+function setAnswerDisabled(type, disabled) {
+    if (type === 'multiple') {
+        document.querySelectorAll('input[name="test-answer"]').forEach(r => r.disabled = disabled);
+    } else {
+        const el = document.getElementById('test-answer');
+        if (el) el.disabled = disabled;
     }
 }
 
@@ -373,7 +388,8 @@ function checkCurrentQuestion() {
     };
     
     displayFeedback(currentQuestionIndex);
-    document.getElementById('check-btn').disabled = true;
+    document.getElementById('test-check-btn').disabled = true;
+    setAnswerDisabled(q.type, true);
 }
 
 // ============================================
