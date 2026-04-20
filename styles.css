@@ -230,6 +230,23 @@ body {
     transform: scale(0.95);
 }
 
+.lesson-audio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding: 10px 14px;
+    background: #f0fdf4;
+    border-left: 4px solid #10b981;
+    border-radius: 6px;
+}
+
+.lesson-audio-label {
+    color: #065f46;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
 .sub-arrow {
     transition: transform 0.3s;
 }

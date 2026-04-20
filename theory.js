@@ -18,15 +18,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(0)">
             <span>📚 1. Ce sunt Nomen-Verb-Verbindungen?</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-0')" id="btn-audio-0">▶</button>
-                <audio id="audio-0" preload="none">
-                    <source src="nvv-01-introducere.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-0">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-0')" id="btn-audio-0">▶</button>
+                    <audio id="audio-0" preload="none">
+                        <source src="nvv-01-introducere.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>Definiție</h4>
                 <p><strong>Nomen-Verb-Verbindungen</strong> (NVV) sunt combinații fixe între un substantiv și un verb, care formează o unitate semantică nouă. Sensul lor NU se poate deduce din sensul individual al cuvintelor.</p>
@@ -54,15 +57,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(1)">
             <span>👁️ 2. Atenție & Percepție (Aufmerksamkeit & Wahrnehmung)</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-1')" id="btn-audio-1">▶</button>
-                <audio id="audio-1" preload="none">
-                    <source src="nvv-02-atentie-perceptie.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-1">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-1')" id="btn-audio-1">▶</button>
+                    <audio id="audio-1" preload="none">
+                        <source src="nvv-02-atentie-perceptie.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -97,15 +103,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(2)">
             <span>🎯 3. Decizii & Acțiuni (Entscheidungen & Handlungen)</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-2')" id="btn-audio-2">▶</button>
-                <audio id="audio-2" preload="none">
-                    <source src="nvv-03-decizii-actiuni.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-2">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-2')" id="btn-audio-2">▶</button>
+                    <audio id="audio-2" preload="none">
+                        <source src="nvv-03-decizii-actiuni.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -139,15 +148,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(3)">
             <span>⚠️ 4. Risc & Precauție (Risiko & Vorsicht)</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-3')" id="btn-audio-3">▶</button>
-                <audio id="audio-3" preload="none">
-                    <source src="nvv-04-risc-precautie.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-3">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-3')" id="btn-audio-3">▶</button>
+                    <audio id="audio-3" preload="none">
+                        <source src="nvv-04-risc-precautie.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -188,15 +200,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(4)">
             <span>🎓 5. Cunoaștere & Competențe (Wissen & Kompetenzen)</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-4')" id="btn-audio-4">▶</button>
-                <audio id="audio-4" preload="none">
-                    <source src="nvv-05-cunoastere-competente.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-4">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-4')" id="btn-audio-4">▶</button>
+                    <audio id="audio-4" preload="none">
+                        <source src="nvv-05-cunoastere-competente.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -231,15 +246,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(5)">
             <span>💭 6. Stări emoționale & gânduri (Gefühle & Gedanken)</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-5')" id="btn-audio-5">▶</button>
-                <audio id="audio-5" preload="none">
-                    <source src="nvv-06-stari-emotionale.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-5">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-5')" id="btn-audio-5">▶</button>
+                    <audio id="audio-5" preload="none">
+                        <source src="nvv-06-stari-emotionale.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <table class="theory-table">
                 <thead>
                     <tr>
@@ -276,15 +294,18 @@ const theoryHTML = `
     <div class="sub-section">
         <div class="sub-section-header" onclick="toggleSubSection(6)">
             <span>💡 7. Reguli & Strategii de învățare</span>
-            <div class="audio-player">
-                <button class="audio-btn" onclick="toggleAudio(event, 'audio-6')" id="btn-audio-6">▶</button>
-                <audio id="audio-6" preload="none">
-                    <source src="nvv-07-strategii.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <span class="sub-arrow">▼</span>
         </div>
         <div class="sub-section-content" id="sub-section-6">
+            <div class="lesson-audio">
+                <div class="audio-player">
+                    <button class="audio-btn" onclick="toggleAudio(event, 'audio-6')" id="btn-audio-6">▶</button>
+                    <audio id="audio-6" preload="none">
+                        <source src="nvv-07-strategii.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <span class="lesson-audio-label">🔊 Ascultă lecția</span>
+            </div>
             <div class="theory-box">
                 <h4>🔑 Strategii de memorare</h4>
                 <ul>
