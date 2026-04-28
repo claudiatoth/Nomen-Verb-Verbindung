@@ -4,14 +4,14 @@
 // Cu player audio la fiecare subtitlu
 // ============================================
 
-// LISTA MP3-URI DE ÎNREGISTRAT (în folder-ul lecției)
-// 1. nvv-01-introducere.mp3
-// 2. nvv-02-atentie-perceptie.mp3
-// 3. nvv-03-decizii-actiuni.mp3
-// 4. nvv-04-risc-precautie.mp3
-// 5. nvv-05-cunoastere-competente.mp3
-// 6. nvv-06-stari-emotionale.mp3
-// 7. nvv-07-strategii.mp3
+// LISTA MP3-URI DE ÎNREGISTRAT (puse în folder-ul audio/)
+// 1. audio/01-introducere.mp3
+// 2. audio/02-atentie-perceptie.mp3
+// 3. audio/03-decizii-actiuni.mp3
+// 4. audio/04-risc-precautie.mp3
+// 5. audio/05-cunoastere-competente.mp3
+// 6. audio/06-stari-emotionale.mp3
+// 7. audio/07-strategii.mp3
 
 const theoryHTML = `
     <!-- Sub-secțiune 0: Ce sunt? -->
@@ -25,7 +25,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-0')" id="btn-audio-0">▶</button>
                     <audio id="audio-0" preload="none">
-                        <source src="nvv-01-introducere.mp3" type="audio/mpeg">
+                        <source src="audio/01-introducere.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -64,7 +64,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-1')" id="btn-audio-1">▶</button>
                     <audio id="audio-1" preload="none">
-                        <source src="nvv-02-atentie-perceptie.mp3" type="audio/mpeg">
+                        <source src="audio/02-atentie-perceptie.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -110,7 +110,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-2')" id="btn-audio-2">▶</button>
                     <audio id="audio-2" preload="none">
-                        <source src="nvv-03-decizii-actiuni.mp3" type="audio/mpeg">
+                        <source src="audio/03-decizii-actiuni.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -155,7 +155,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-3')" id="btn-audio-3">▶</button>
                     <audio id="audio-3" preload="none">
-                        <source src="nvv-04-risc-precautie.mp3" type="audio/mpeg">
+                        <source src="audio/04-risc-precautie.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -207,7 +207,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-4')" id="btn-audio-4">▶</button>
                     <audio id="audio-4" preload="none">
-                        <source src="nvv-05-cunoastere-competente.mp3" type="audio/mpeg">
+                        <source src="audio/05-cunoastere-competente.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -253,7 +253,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-5')" id="btn-audio-5">▶</button>
                     <audio id="audio-5" preload="none">
-                        <source src="nvv-06-stari-emotionale.mp3" type="audio/mpeg">
+                        <source src="audio/06-stari-emotionale.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
@@ -301,7 +301,7 @@ const theoryHTML = `
                 <div class="audio-player">
                     <button class="audio-btn" onclick="toggleAudio(event, 'audio-6')" id="btn-audio-6">▶</button>
                     <audio id="audio-6" preload="none">
-                        <source src="nvv-07-strategii.mp3" type="audio/mpeg">
+                        <source src="audio/07-strategii.mp3" type="audio/mpeg">
                     </audio>
                 </div>
                 <span class="lesson-audio-label">🔊 Ascultă lecția</span>
